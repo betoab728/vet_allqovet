@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Class1
+    public class TipoCita
     {
+        public int Idtipocita { get; set; }
+        public string Descripcion { get; set; }
     }
+
 }
