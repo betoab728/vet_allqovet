@@ -16,5 +16,15 @@ namespace Allqovet
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            es
+        }
+
+        private void VIVIAGUAS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
