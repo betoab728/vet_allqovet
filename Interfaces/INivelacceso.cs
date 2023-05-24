@@ -10,8 +10,11 @@ namespace Interfaces
 {
    public interface INivelacceso
     {
+
         int Agregar(NivelAcceso nivelacceso);
         int Editar(NivelAcceso nivelacceso);
         DataTable Listar();
+
+
     }
 }

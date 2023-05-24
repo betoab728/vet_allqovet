@@ -54,3 +54,5 @@ C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\System.Buf
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.csproj.CopyComplete
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmMenu.resources
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmClientes.resources

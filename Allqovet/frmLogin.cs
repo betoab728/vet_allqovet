@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AllqovetBLL;
+using Entidades;
 
 namespace Allqovet
 {
@@ -24,16 +25,16 @@ namespace Allqovet
             {
                 NivelaccesoBLL nivel = new NivelaccesoBLL();
 
-                cboAcceso.ValueMember = "Idnivel";
-                cboAcceso.DisplayMember = "descripcion";
-                cboAcceso.DataSource = nivel.Listar();   
+                cbonivel.ValueMember = "Idnivel";
+                cbonivel.DisplayMember = "descripcion";
+                cbonivel.DataSource = nivel.Listar();   
 
             }
 
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
 
          
@@ -51,7 +52,10 @@ namespace Allqovet
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-          
+            txtnombre.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Control;
+            txtpass.BackColor = SystemColors.Control;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -71,16 +75,7 @@ namespace Allqovet
 
         private void textBox3_Click(object sender, EventArgs e)
         {
-            int x1 = textBox3.Left;
-            int y1 = textBox3.Top + textBox3.Height;
-            int x2 = textBox3.Right;
-            int y2 = y1;
-
-            // Crear un objeto Graphics a partir del formulario
-            Graphics g = CreateGraphics();
-
-            // Dibujar la línea debajo del TextBox
-            g.DrawLine(Pens.Red, x1, y1, x2, y2);
+          
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -92,5 +87,76 @@ namespace Allqovet
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            txtpass.BackColor = Color.White;
+            panel4.BackColor = Color.White;
+
+            txtnombre.BackColor = SystemColors.Control;
+            panel3.BackColor = SystemColors.Control;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Validacion())
+            {
+                MessageBox.Show("Acceso correcto. Bienvenido"); 
+
+                frmMenu menu = new frmMenu();
+                menu.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Usuario no encontrado");
+            }
+            
+        }
+
+        private bool Validacion()
+        {
+            bool resultado=false;
+
+
+            using (UsuarioBLL db=new UsuarioBLL())
+            {
+                try
+                {
+                    Usuario usuario = new Usuario();
+
+                    usuario.Nombre =txtnombre.Text;
+                    usuario.Contraseña =txtpass.Text;
+                    usuario.Idnivelacceso =Convert.ToInt32(cbonivel.SelectedValue);
+
+                    DataTable datos = db.Login(usuario);
+
+                    if (datos.Rows.Count > 0)
+                    {
+                        resultado = true;
+                    }
+                    else
+                    {
+                        resultado = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    ex.ToString();
+                }
+            }
+
+
+            return resultado;
+            
+        }
+
+
     }
 }

@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using Entidades;
 using Interfaces;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace AllqovetDAO
 {
     public class NivelaccesoDAO : INivelacceso,IDisposable
     {
-        String bd = "Server=grupoctc.ddns.net;Database=allqovet; Uid=admin;Pwd=123456;";
+
+        string cnx = Conexion.Cadenaconexion();
 
         public int Agregar(NivelAcceso nivelacceso)
         {
@@ -29,8 +31,8 @@ namespace AllqovetDAO
         public DataTable Listar()
         {
            
-
-            using (MySqlConnection cn = new MySqlConnection(bd))
+ 
+            using (MySqlConnection cn = new MySqlConnection(cnx))
             {
                 using (MySqlCommand cmd = new MySqlCommand("sp_ListarAccesos", cn))
                 {

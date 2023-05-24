@@ -9,7 +9,6 @@ using Interfaces;
 using AllqovetDAO;
 
 namespace AllqovetBLL
-
 {
     public class NivelaccesoBLL : INivelacceso,IDisposable
     {

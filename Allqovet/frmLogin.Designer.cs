@@ -34,27 +34,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cboAcceso = new System.Windows.Forms.ComboBox();
+            this.cbonivel = new System.Windows.Forms.ComboBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,28 +116,18 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(300, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(73, 448);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(248, 20);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button2
             // 
@@ -155,24 +144,24 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.cboAcceso);
+            this.panel5.Controls.Add(this.cbonivel);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(0, 186);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(450, 45);
             this.panel5.TabIndex = 4;
             // 
-            // cboAcceso
+            // cbonivel
             // 
-            this.cboAcceso.BackColor = System.Drawing.Color.White;
-            this.cboAcceso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAcceso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboAcceso.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.cboAcceso.FormattingEnabled = true;
-            this.cboAcceso.Location = new System.Drawing.Point(68, 11);
-            this.cboAcceso.Name = "cboAcceso";
-            this.cboAcceso.Size = new System.Drawing.Size(349, 25);
-            this.cboAcceso.TabIndex = 5;
+            this.cbonivel.BackColor = System.Drawing.Color.White;
+            this.cbonivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbonivel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbonivel.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.cbonivel.FormattingEnabled = true;
+            this.cbonivel.Location = new System.Drawing.Point(68, 11);
+            this.cbonivel.Name = "cbonivel";
+            this.cbonivel.Size = new System.Drawing.Size(349, 25);
+            this.cbonivel.TabIndex = 5;
             // 
             // pictureBox4
             // 
@@ -207,17 +196,18 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Location = new System.Drawing.Point(0, 237);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 45);
-            this.panel4.TabIndex = 1;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.txtnombre);
+            this.panel3.Location = new System.Drawing.Point(0, 237);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(450, 45);
+            this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox2
             // 
@@ -229,35 +219,40 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox1.Location = new System.Drawing.Point(68, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(349, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtnombre.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtnombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(49)))), ((int)(((byte)(96)))));
+            this.txtnombre.Location = new System.Drawing.Point(68, 15);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(349, 20);
+            this.txtnombre.TabIndex = 4;
+            this.txtnombre.Click += new System.EventHandler(this.textBox1_Click);
+            this.txtnombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // panel3
+            // panel4
             // 
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(0, 295);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 45);
-            this.panel3.TabIndex = 0;
+            this.panel4.Controls.Add(this.txtpass);
+            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Location = new System.Drawing.Point(0, 295);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(450, 45);
+            this.panel4.TabIndex = 0;
             // 
-            // textBox2
+            // txtpass
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox2.Location = new System.Drawing.Point(68, 11);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(349, 20);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtpass.BackColor = System.Drawing.SystemColors.Control;
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(49)))), ((int)(((byte)(96)))));
+            this.txtpass.Location = new System.Drawing.Point(68, 11);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.Size = new System.Drawing.Size(349, 20);
+            this.txtpass.TabIndex = 5;
+            this.txtpass.Click += new System.EventHandler(this.textBox2_Click);
+            this.txtpass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // pictureBox3
             // 
@@ -289,11 +284,11 @@
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -311,14 +306,13 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox cboAcceso;
+        private System.Windows.Forms.ComboBox cbonivel;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
     }
 }
