@@ -12,7 +12,7 @@ namespace Allqovet
 {
     public partial class frmMenu : Form
     {
-        private Panel leftBorderBtn;
+        /*private Panel leftBorderBtn;*/
 
         private Form formActual;
 
@@ -95,10 +95,10 @@ namespace Allqovet
 
                 button.TextAlign = ContentAlignment.MiddleRight;
                 button.BackColor = Color.FromArgb(144, 116, 140);
-                leftBorderBtn.BackColor = Color.White;
+                /*leftBorderBtn.BackColor = Color.White;
                 leftBorderBtn.Location = new Point(0, button.Location.Y);
                 leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                leftBorderBtn.BringToFront();*/
 
             }
            
@@ -125,26 +125,26 @@ namespace Allqovet
             if (panelSubmenuVentas.Visible == true)
                 panelSubmenuVentas.Visible = false;
 
-            if (panelsubmenuMant.Visible == true)
-                panelsubmenuMant.Visible = false;
+            if (panelProductos.Visible == true)
+                panelProductos.Visible = false;
 
-            if (panelsunmenuAlmacen.Visible == true)
-                panelsunmenuAlmacen.Visible = false;
+            if (panelFacturacion.Visible == true)
+                panelFacturacion.Visible = false;
 
-            if (panelsubmenuPedidos.Visible == true)
-                panelsubmenuPedidos.Visible = false;
+            if (panelAlmacen.Visible == true)
+                panelAlmacen.Visible = false;
 
-            if (panelsubmenuFinanzas.Visible == true)
-                panelsubmenuFinanzas.Visible = false;
-
-            if (panelsubmenuFacturacion.Visible == true)
-                panelsubmenuFacturacion.Visible = false;
+            if (panelPedidos.Visible == true)
+                panelPedidos.Visible = false;
 
             if (panelsubmenuSistemas.Visible == true)
                 panelsubmenuSistemas.Visible = false;
 
             if (panelsubmenuClientes.Visible == true)
                 panelsubmenuClientes.Visible = false;
+
+            if (panelSubmenuConsultorio.Visible == true)
+                panelSubmenuConsultorio.Visible = false;
         }
 
        private void MostrarSubmenu(Panel submenu)
@@ -202,12 +202,6 @@ namespace Allqovet
          //   BotonActivo(button5);
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //  BotonActivo(button6);
-            MostrarSubmenu(panelsubmenuPedidos);
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
 
@@ -235,22 +229,21 @@ namespace Allqovet
 
         private void button16_Click(object sender, EventArgs e)
         {
-            MostrarSubmenu(panelsubmenuMant);
+            //MostrarSubmenu(panelsubmenuMant);
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            MostrarSubmenu(panelsunmenuAlmacen);
+            MostrarSubmenu(panelAlmacen);
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            MostrarSubmenu(panelsubmenuFinanzas);
+            /*MostrarSubmenu(panelsubmenuFinanzas);*/
         }
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            MostrarSubmenu(panelsubmenuFacturacion);
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -261,6 +254,81 @@ namespace Allqovet
         private void button29_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelsubmenuClientes);
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelProductos);
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnFacturacion_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelFacturacion);
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelFacturacion_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelPedidos);
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelAlmacen);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSubmenuConsultorio_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

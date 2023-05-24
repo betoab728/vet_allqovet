@@ -160,5 +160,8 @@
   <ItemGroup>
     <None Include="Resources\icon minimizar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito-de-compras.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
