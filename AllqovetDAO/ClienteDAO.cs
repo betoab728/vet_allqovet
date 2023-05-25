@@ -15,9 +15,27 @@ namespace AllqovetDAO
 
         string cnx = Conexion.ObtenerConexion();
 
-        public int Agregar(Cliente nivelacceso)
+        public int Agregar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            using (MySqlConnection cn = new MySqlConnection(cnx))
+            {
+                using (MySqlCommand cmd=new MySqlCommand("sp_RegistrarCliente",cn))
+                {
+                    cn.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("pdni",cliente.DNI );
+                    cmd.Parameters.AddWithValue("pApepaterno", cliente.ApellidoPaterno);
+                    cmd.Parameters.AddWithValue("pApematerno", cliente.ApellidoMaterno);
+                    cmd.Parameters.AddWithValue("pNombres", cliente.Nombres);
+                    cmd.Parameters.AddWithValue("pDireccion", cliente.Direccion);
+                    cmd.Parameters.AddWithValue("ptelefono",cliente.Telefono );
+                    cmd.Parameters.AddWithValue("pcorreo",cliente.Telefono );
+
+                    int r = cmd.ExecuteNonQuery();
+
+                    return r;
+                }
+            }
         }
 
         public DataTable BuscarApellidos(Cliente cliente)

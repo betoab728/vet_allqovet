@@ -14,9 +14,9 @@ namespace AllqovetBLL
     {
         ClienteDAO db = new ClienteDAO();
        
-        public int Agregar(Cliente nivelacceso)
+        public int Agregar(Cliente cliente)
         {
-            throw new NotImplementedException();
+           return db.Agregar(cliente);
         }
 
         public DataTable BuscarApellidos(Cliente cliente)

@@ -122,3 +122,4 @@ C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\Newtonsoft
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmProductos.resources
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmProveedores.resources
 C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmTrabajador.resources
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmNuevoCliente.resources
