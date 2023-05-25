@@ -15,7 +15,7 @@ namespace AllqovetDAO
     public class NivelaccesoDAO : INivelacceso,IDisposable
     {
 
-        string cnx = Conexion.Cadenaconexion();
+        string cnx = Conexion.ObtenerConexion();
 
         public int Agregar(NivelAcceso nivelacceso)
         {

@@ -13,7 +13,7 @@ namespace AllqovetDAO
   public  class UsuarioDAO : IUsuario,IDisposable
     {
 
-        string cnx = Conexion.Cadenaconexion();
+        string cnx = Conexion.ObtenerConexion();
 
         public int Agregar(Usuario usuario)
         {

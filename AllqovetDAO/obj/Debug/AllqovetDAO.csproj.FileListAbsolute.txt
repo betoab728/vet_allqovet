@@ -296,3 +296,5 @@ D:\VET PROJECT\vet_allqovet\AllqovetDAO\obj\Debug\AllqovetDAO.csproj.CoreCompile
 D:\VET PROJECT\vet_allqovet\AllqovetDAO\obj\Debug\AllqovetDAO.csproj.CopyComplete
 D:\VET PROJECT\vet_allqovet\AllqovetDAO\obj\Debug\AllqovetDAO.dll
 D:\VET PROJECT\vet_allqovet\AllqovetDAO\obj\Debug\AllqovetDAO.pdb
+C:\Users\ELIAS\Documents\curso integrador\allqovet\AllqovetDAO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ELIAS\Documents\curso integrador\allqovet\AllqovetDAO\bin\Debug\Newtonsoft.Json.xml

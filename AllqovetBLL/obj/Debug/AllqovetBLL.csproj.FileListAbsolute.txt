@@ -98,3 +98,5 @@ D:\VET PROJECT\vet_allqovet\AllqovetBLL\obj\Debug\AllqovetBLL.csproj.CoreCompile
 D:\VET PROJECT\vet_allqovet\AllqovetBLL\obj\Debug\AllqovetBLL.csproj.CopyComplete
 D:\VET PROJECT\vet_allqovet\AllqovetBLL\obj\Debug\AllqovetBLL.dll
 D:\VET PROJECT\vet_allqovet\AllqovetBLL\obj\Debug\AllqovetBLL.pdb
+C:\Users\ELIAS\Documents\curso integrador\allqovet\AllqovetBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ELIAS\Documents\curso integrador\allqovet\AllqovetBLL\bin\Debug\Newtonsoft.Json.xml

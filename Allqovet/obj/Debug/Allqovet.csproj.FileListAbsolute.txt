@@ -117,3 +117,8 @@ D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.pdb
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmProductos.resources
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmProveedores.resources
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmTrabajador.resources
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmProductos.resources
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmProveedores.resources
+C:\Users\ELIAS\Documents\curso integrador\allqovet\Allqovet\obj\Debug\Allqovet.frmTrabajador.resources
