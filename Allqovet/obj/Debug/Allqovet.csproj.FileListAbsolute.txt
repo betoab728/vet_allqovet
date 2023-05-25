@@ -114,3 +114,6 @@ D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.csproj.CoreCompileInputs
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.csproj.CopyComplete
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.exe
 D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.pdb
+D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmProductos.resources
+D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmProveedores.resources
+D:\VET PROJECT\vet_allqovet\Allqovet\obj\Debug\Allqovet.frmTrabajador.resources
