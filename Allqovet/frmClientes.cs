@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
+using AllqovetBLL;
 
 namespace Allqovet
 {
@@ -38,5 +40,38 @@ namespace Allqovet
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void Buscar()
+        {
+            using (ClienteBLL db= new ClienteBLL())
+            {
+                try
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.ApellidoPaterno = txtbuscar.Text;
+
+                    DataTable dt = db.BuscarApellidos(cliente);
+
+                    dgClientes.DataSource = dt;
+
+                }
+                catch (Exception ex)
+                {
+
+                    ex.ToString();
+                }
+            }
+        } 
+
     }
 }
