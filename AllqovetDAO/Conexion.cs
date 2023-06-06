@@ -25,7 +25,7 @@ namespace AllqovetDAO
         public static String ObtenerConexion()
         {
             String cnx = "";
-
+            String cd = "Server=grupoctc.ddns.net;Database=allqovet; Uid=admin;Pwd=Utp+Integrador#37646*;";
             try
             {
                 // Ruta del archivo JSON
@@ -47,7 +47,7 @@ namespace AllqovetDAO
                 Console.WriteLine("Error al leer el archivo JSON: " + ex.Message);
             }
 
-            return cnx;
+            return cd;
         }
 
 
