@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
+using AllqovetBLL;
 
 namespace Allqovet
 {
@@ -39,9 +41,48 @@ namespace Allqovet
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
 
+=======
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void Buscar()
+        {
+            using (ClienteBLL db= new ClienteBLL())
+            {
+                try
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.ApellidoPaterno = txtbuscar.Text;
+
+                    DataTable dt = db.BuscarApellidos(cliente);
+
+                    dgClientes.DataSource = dt;
+
+                }
+                catch (Exception ex)
+                {
+
+                    ex.ToString();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNuevoCliente nuevo = new frmNuevoCliente();
+            nuevo.ShowDialog();
+>>>>>>> 01c0b84d747a8d3a48e883a9eb045bdf795e05bd
         }
     }
 }

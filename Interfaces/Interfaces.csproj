@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+<<<<<<< HEAD
     <Compile Include="IMarca.cs" />
+=======
+    <Compile Include="ICliente.cs" />
+>>>>>>> 01c0b84d747a8d3a48e883a9eb045bdf795e05bd
     <Compile Include="INivelacceso.cs" />
     <Compile Include="IUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

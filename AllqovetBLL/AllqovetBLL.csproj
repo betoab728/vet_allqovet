@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+<<<<<<< HEAD
     <Compile Include="MarcaBLL.cs" />
+=======
+    <Compile Include="ClienteBLL.cs" />
+>>>>>>> 01c0b84d747a8d3a48e883a9eb045bdf795e05bd
     <Compile Include="NivelaccesoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioBLL.cs" />
